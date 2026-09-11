@@ -14,3 +14,6 @@ df["Consumption"] = df["Consumption"].str.replace(",", ".").astype(float)
 
 # Oppgave 4
 print(df.head())
+
+# Oppgave 5
+print(df.index[0])
