@@ -33,3 +33,8 @@ plt.grid(True)
 plt.savefig(r"C:\repos\ELK330-Oving4\oppgave6.png")
 plt.show()
 
+# Oppgave 7
+# Ny kolonne med netto rpoduksjon (Production - Consumption)
+df["Netto"] = df["Production"] - df["Consumption"]
+
+
