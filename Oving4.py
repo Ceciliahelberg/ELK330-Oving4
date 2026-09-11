@@ -37,4 +37,18 @@ plt.show()
 # Ny kolonne med netto rpoduksjon (Production - Consumption)
 df["Netto"] = df["Production"] - df["Consumption"]
 
+# Oppgave 8
+# maksimal produksjon
+max_produksjon = df["Production"].max()
+max_produksjon_time = df["Production"].idxmax()
+# minimal produksjon
+min_produksjon = df["Production"].min()
+min_produksjon_time = df["Production"].idxmin()
+# gjennomsnittlig produksjon
+mean_produksjon = df["Production"].mean()
+# skriver ut resultatene
+print(f"Max produksjon: {max_produksjon:.2f}, Time: {max_produksjon_time}")
+print(f"Min produksjon: {min_produksjon:.2f}, Time: {min_produksjon_time}")
+print(f"Mean produksjon: {mean_produksjon:.2f}")
+
 
