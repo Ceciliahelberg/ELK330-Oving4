@@ -51,4 +51,14 @@ print(f"Max produksjon: {max_produksjon:.2f}, Time: {max_produksjon_time}")
 print(f"Min produksjon: {min_produksjon:.2f}, Time: {min_produksjon_time}")
 print(f"Mean produksjon: {mean_produksjon:.2f}")
 
+# Oppgave 9
+# maksimal netto produksjon
+max_netto = df["Netto"].max()
+max_netto_time = df["Netto"].idxmax()
+# minimal netto produksjon
+min_netto = df["Netto"].min()
+min_netto_time = df["Netto"].idxmin()
+# skriver ut resultatene
+print(f"Max netto produksjon: {max_netto:.2f}, Time: {max_netto_time}")
+print(f"Min netto produksjon: {min_netto:.2f}, Time: {min_netto_time}")
 
