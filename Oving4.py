@@ -65,3 +65,13 @@ print(f"Min netto produksjon: {min_netto:.2f}, Time: {min_netto_time}")
 # Oppgave 10
 total_production = df["Production"].sum()
 print(f"Total produksjon: {total_production:.2f}")
+
+# Oppgave 11
+df.plot(y=["Production", "Consumption"], figsize=(10, 6), color=["purple", "hotpink"])
+plt.title("Production and Consumption Over Time")
+plt.xlabel("Time")
+plt.ylabel("MW")
+plt.legend(["Production", "Consumption"])
+plt.grid(True)
+plt.savefig(r"C:\repos\ELK330-Oving4\oppgave11.png")
+plt.show()
