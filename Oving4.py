@@ -62,3 +62,6 @@ min_netto_time = df["Netto"].idxmin()
 print(f"Max netto produksjon: {max_netto:.2f}, Time: {max_netto_time}")
 print(f"Min netto produksjon: {min_netto:.2f}, Time: {min_netto_time}")
 
+# Oppgave 10
+total_production = df["Production"].sum()
+print(f"Total produksjon: {total_production:.2f}")
