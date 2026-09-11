@@ -75,3 +75,13 @@ plt.legend(["Production", "Consumption"])
 plt.grid(True)
 plt.savefig(r"C:\repos\ELK330-Oving4\oppgave11.png")
 plt.show()
+
+# Oppgave 12
+df.plot(y=["Production", "Consumption", "Netto"], figsize=(10, 6), color=["purple", "hotpink", "pink"])
+plt.title("Production and Consumption Over Time")
+plt.xlabel("Time")
+plt.ylabel("MW")
+plt.legend(["Production", "Consumption", "Netto"])
+plt.grid(True)
+plt.savefig(r"C:\repos\ELK330-Oving4\oppgave12.png")
+plt.show()
